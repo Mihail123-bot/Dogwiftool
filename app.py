@@ -128,6 +128,36 @@ st.markdown("""
       </style>
       """, unsafe_allow_html=True)
 
+
+
+
+# After the navbar, add this hero section
+st.markdown("""
+    <style>
+    .hero {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        padding: 4rem 2rem;
+        border-radius: 15px;
+        text-align: center;
+        margin: 2rem 0;
+    }
+    
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    </style>
+    <div class="hero">
+        <h1 style="color: white; font-size: 3.5rem;">Welcome to DogWifTools</h1>
+        <p style="color: white; font-size: 1.5rem;">Your Ultimate Pump.fun Companion</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+
+
   # Navbar Section
 st.markdown(
       """
@@ -147,6 +177,25 @@ col1, col2 = st.columns([2, 1])
 with col1:
       st.video("https://www.youtube.com/watch?v=8HSQdpHETBo")
 
+
+
+# Enhance the features section
+st.markdown("""
+    <div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 2rem 0;'>
+        <div style='background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; text-align: center;'>
+            <h3>🚀 Lightning Fast</h3>
+            <p>Execute trades with millisecond precision</p>
+        </div>
+        <div style='background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; text-align: center;'>
+            <h3>🔒 Secure</h3>
+            <p>Enterprise-grade security for your assets</p>
+        </div>
+        <div style='background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; text-align: center;'>
+            <h3>📊 Analytics</h3>
+            <p>Detailed insights and reporting</p>
+        </div>
+    </div>
+""", unsafe_allow_html=True)
 # Features Section
 st.header("Key Features That Will Elevate Your Launches")
 st.write("Ensure consistent volume and maximize your token's potential with advanced automated processes.")
@@ -198,3 +247,37 @@ st.markdown("---")
 st.write(
     "© 2025 DogWifTools. All rights reserved. For terms, visit our [Terms of Service](#)."
 )
+
+# Add before features section
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    st.markdown("""
+        <div style='text-align: center; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 10px;'>
+            <h2 style='color: #4A90E2;'>75+</h2>
+            <p>Active Users</p>
+        </div>
+    """, unsafe_allow_html=True)
+with col2:
+    st.markdown("""
+        <div style='text-align: center; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 10px;'>
+            <h2 style='color: #4A90E2;'>380+</h2>
+            <p>Successful Launches</p>
+        </div>
+    """, unsafe_allow_html=True)
+with col3:
+    st.markdown("""
+        <div style='text-align: center; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 10px;'>
+            <h2 style='color: #4A90E2;'>12/7</h2>
+            <p>Support</p>
+        </div>
+    """, unsafe_allow_html=True)
+with col4:
+    st.markdown("""
+        <div style='text-align: center; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 10px;'>
+            <h2 style='color: #4A90E2;'>100%</h2>
+            <p>Satisfaction</p>
+        </div>
+    """, unsafe_allow_html=True)
+
+
+
